@@ -2,7 +2,6 @@ import { useState } from "react";
 import colordata from "../colordata.js";
 function Displaycolorcomponent() {
   const [selected, setselected] = useState("");
-  const var1 = "2";
   const colordataobj = {
     width: "100px",
     height: "60px",
