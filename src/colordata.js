@@ -3,7 +3,6 @@ const colordata = [
     "blue",
     "yellow",
     "pink",
-    "red",
     "black"
 ]
 export default colordata
