@@ -19,12 +19,13 @@ function Displaycolorcomponent() {
   }
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
+      <div style={{ display: "flex", justifyContent: "space-around"}}>
         {colordata.map((color) => {
           return (
+            <>
             <div
               style={
-                selected == color
+                  selected == color
                   ? colorborder
                   : {}
               }
@@ -32,11 +33,13 @@ function Displaycolorcomponent() {
               <div
                 style={{...colordataobj, backgroundColor:color}}
                 onClick={() => handlecolor(color)}
-              ></div>
+                ></div>
             </div>
+          </>
           );
         })}
       </div>
+    <div style={{backgroundColor:selected, height:"85vh"}}></div>
     </>
   );
 }
