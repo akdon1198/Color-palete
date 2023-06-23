@@ -1,7 +1,9 @@
+import Colorpage from "./pages/colorpage"
+
 function App(){
     return(
         <>
-            Hello
+            <Colorpage/>
         </>
     )
 }
